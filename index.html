@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<!-- Meta Pixel Code -->
+<script>
+if (!window.__bqPixelInit) {
+  window.__bqPixelInit = true;
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '758607728710333');
+  fbq('track', 'PageView');
+
+  var WA_RE = /(^|\/\/|\.)(wa\.me|api\.whatsapp\.com|whatsapp\.com)(\/|$|\?)/i;
+  document.addEventListener('click', function (ev) {
+    if (ev.__bqLeadTracked) return;
+    var el = ev.target && ev.target.closest ? ev.target.closest('a[href]') : null;
+    if (!el) return;
+    var href = el.href || el.getAttribute('href') || '';
+    if (!WA_RE.test(href)) return;
+    ev.__bqLeadTracked = true;
+    if (window.fbq) fbq('track', 'Lead');
+  }, true);
+}
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=758607728710333&ev=PageView&noscript=1" alt=""></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#FBF7F0; font-family:'Jost',system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:#8E6B2F; text-decoration:none; }
+  a:hover { color:#2E2A26; }
+  input, textarea, select { font-family:'Jost',sans-serif; }
+</style>
+</helmet>
+
+<div style="background:#FBF7F0; color:#2E2A26; max-width:1440px; margin:0 auto">
+
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:22px 48px; border-bottom:1px solid rgba(46,42,38,.1)">
+          <img src="assets/sello.png" alt="Bouqueterie" style="height:38px; width:auto; display:block">
+          <div style="display:flex; gap:34px; font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:#4A443E">
+            <a href="#propuesta" style="color:#4A443E">La propuesta</a>
+            <a href="#sets" style="color:#4A443E">Los sets</a>
+            <a href="#contacto-a" style="color:#4A443E">Contacto</a>
+          </div>
+          <a href="{{ waHref }}" style="font-size:11px; letter-spacing:.24em; text-transform:uppercase; border:1px solid #8E6B2F; color:#8E6B2F; padding:11px 20px">WhatsApp</a>
+        </div>
+
+        <div style="overflow:hidden">
+          <img src="assets/spread-maison.jpg" alt="Colección Bouqueterie" style="width:100%; height:auto; display:block">
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:24px; padding:72px 120px 84px">
+            <span style="font-size: 11px; letter-spacing: .42em; text-transform: uppercase; color: #8E6B2F" data-om-label="soluciones corporativas">SOLUCIONES CORPORATIVAS</span>
+            <h1 style="margin:0; font-family:'Cormorant Garamond',serif; font-weight:300; font-size:72px; line-height:1.02; letter-spacing:-.015em; color:#2E2A26; max-width:900px; text-wrap:balance"><div>Regalos de autor</div><div>empresariales.</div></h1>
+            <div style="margin:0; max-width:520px; font-size:15px; line-height:1.75; color:#6E655C; font-weight:300"><div>Cuando el detalle tiene identidad propia,<br>la marca que lo entrega también se distingue.</div></div>
+            <div style="display:flex; gap:14px; margin-top:8px">
+              <a href="{{ waHref }}" style="border:1px solid #8E6B2F; color:#8E6B2F; font-size:11px; letter-spacing:.24em; text-transform:uppercase; padding:16px 32px">Escribir por WhatsApp</a>
+            </div>
+          </div>
+
+        <div id="propuesta" style="background:#F4EEE4; display:flex; flex-direction:column; align-items:center; text-align:center; gap:24px; padding:56px 200px 60px">
+          <span style="font-size:11px; letter-spacing:.42em; text-transform:uppercase; color:#8E6B2F">La propuesta</span>
+          <div style="margin:0; font-family:'Cormorant Garamond',serif; font-weight:300; font-size:38px; line-height:1.32; letter-spacing:-.01em"><div>Regalos corporativos pensados para&nbsp;<span style="letter-spacing: -0.38px;">tu empresa, tu hotel, o tu próximo evento.</span></div></div>
+          <div style="width:64px; height:1px; background:#C9BCA6"></div>
+        </div><div id="sets" style="padding:64px 48px 100px; display:flex; flex-direction:column; gap:40px">
+          <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:40px; border-bottom:1px solid rgba(46,42,38,.12); padding-bottom:20px">
+            <h2 style="margin:0; font-family:'Cormorant Garamond',serif; font-weight:300; font-size:44px; line-height:1.05">Qué compone un set</h2>
+            <div style="margin:0; max-width:380px; font-size:14px; line-height:1.8; color:#6E655C; font-weight:300"><div>Cada set combina productos ya existentes de la Maison - perfumes, jabones, aromatizantes y accesorios - con posibilidad de personalizar el packaging con la identidad de tu marca.</div></div>
+          </div>
+          <div style="display:flex; justify-content:center; padding:16px 0 8px">
+            <p style="margin:0; font-family:'Cormorant Garamond',serif; font-weight:300; font-size:38px; line-height:1.32; letter-spacing:-.01em; text-align:center; text-wrap:balance">11 sets pensados para cada ocasión.</p>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px">
+            <div style="height:420px; overflow:hidden"><img src="assets/set-01.jpg" alt="Le Parfum" style="width:100%; height:100%; object-fit:cover; object-position:center 62%"></div>
+            <div style="height:420px; overflow:hidden"><img src="assets/set-02.jpg" alt="Miel y Loto" style="width:100%; height:100%; object-fit:cover; object-position:center 58%"></div>
+            <div style="height:420px; overflow:hidden"><img src="assets/set-03.jpg" alt="Aromatizantes" style="width:100%; height:100%; object-fit:cover; object-position:center 60%"></div>
+          </div>
+        </div>
+
+        <div id="contacto-a" style="display:flex; justify-content:center; padding:100px 48px">
+          <div style="display:flex; flex-direction:column; align-items:center; text-align:center; gap:22px; max-width:620px">
+            <span style="font-size:11px; letter-spacing:.42em; text-transform:uppercase; color:#8E6B2F">Contacto</span>
+            <h2 style="margin:0; font-family:'Cormorant Garamond',serif; font-weight:300; font-size:46px; line-height:1.1">Contactános para más información</h2>
+            <p style="margin:0; font-size:14px; line-height:1.8; color:#6E655C; font-weight:300">Respondemos dentro de las 24 horas hábiles.</p>
+            <div style="display:flex; margin-top:10px">
+              <a href="{{ waHref }}" style="background:#8E6B2F; color:#FFFCF6; font-size:11px; letter-spacing:.24em; text-transform:uppercase; padding:16px 34px" style-hover="background:#2E2A26">Escribinos por WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#FBF7F0; color:#8E6B2F; border-top:1px solid rgba(142,107,47,.35); padding:44px 48px; display:flex; align-items:center; justify-content:space-between; font-size:11px; letter-spacing:.22em; text-transform:uppercase">
+          <span>Bouqueterie · Recoleta, Buenos Aires</span>
+          <span>{{ telefono }}</span>
+        </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;telefono&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+54 9 11 4025-7777&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contacto&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const telefono = this.props.telefono ?? "+54 9 11 5555 5555";
+    return {
+      telefono,
+      waHref: "https://wa.me/" + telefono.replace(/[^0-9]/g, "")
+    };
+  }
+}
+</script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#8E6B2F"/><text x="50" y="62" font-family="Georgia,serif" font-size="34" fill="#FBF7F0" text-anchor="middle">B</text></svg></template>
+</body>
+</html>
